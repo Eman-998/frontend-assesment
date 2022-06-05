@@ -7,22 +7,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> TechMerce Ecommerce </title>
 	<link rel="stylesheet" href="style.css">
+
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
-
+<body>
 <!--Navigation BAR-->
 
-<nav class="navbar"></nav>
+<nav class="navbar">
+	
+		<div class="nav">
+			<img src="images/logo.png" class="logo" alt="">
+			<div class= "upper-item">
+				<li class ="link-item"> <a href="#" class ="link"> <i class="fal fa-solid fa-phone iconsq"></i>  Call Center </a> </li>
+			<li class ="link-item"> <a href="#" class ="link"><i class="fal fa-solid fa-bus iconsq "></i>  Shipping & returns </a> </li>
+			</div>
+		</div>
+		<div class="navbar" id="mynav">
+		<ul class="links-container"> 
+			<li class ="link-item"><button onclick="document.location='shop.html'"><a href="#" class ="link"> Shop </a> </button> </li>
+			<li class ="link-item"><button onclick="document.location='work.html'"><a href="#" class ="link"> Promo </a> </li>
+			<li class ="link-item"><button onclick="document.location='work.html'"><a href="#" class ="link"> About </a> </li>
+			<li class ="link-item"><button onclick="document.location='work.html'"><a href="#" class ="link"> Blog </a> </li>
+			<div class="nav-items">
+			<div class="search">
+				<input type="text" class="search-box" placeholder=" Search what you need" >
+				<button class="search-btn"><img src="images/Vector.png" height ="20" width="20" /> </button>
+			</div>
+			<a href="#"><img src="images/heart.svg" alt=""></a>
+			<a href="#"><img src="images/cart.svg" alt=""></a>
+			<a href="#"><img src="images/user.svg" alt=""></a>
+			<a href="#"><img src="images/bell.svg" alt=""></a>
+			</div>
+		</ul>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fal fa-bars"></i>
+		</a>
+	</div>
+</nav>
 
 <script src="Nav.js"> </script>
-
 
 <!-- Shop Banner-->
 <li class ='banner'>
 	<a> <img src= 'images/bg.png' ></a>
 </li>
+
 
 <!-- Shop -->
 <div class="shop">
