@@ -18,7 +18,15 @@ for (let i = 0; i < navElemArr.length; i++) {
     overlay.classList.toggle("active");
   });
 }
-
+//for resposive navbar
+function myFunction() {
+  var x = document.getElementById("mynav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
 
 
 /**
@@ -52,12 +60,4 @@ window.onclick = function(event) {
     }
   };
 }
-//for resposive navbar
-function myFunction() {
-  var x = document.getElementById("mynav");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
-  }
-}
+
