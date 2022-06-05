@@ -1,31 +1,4 @@
-const createNav=() => {
-	let nav = document.querySelector('.navbar');
 
-	nav.innerHTML = `
-	<div class="nav">
-    <img src="images/logo.png" class="logo" alt="">
-    <div class="nav-items">
-      <div class="search">
-        <input type="text" class="search-box" placeholder=" Search what you need" >
-        <button class="search-btn"><img src="images/Vector.png" height ="20" width="20" /> </button>
-      </div>
-      <a href="#"><img src="images/heart.svg" alt=""></a>
-      <a href="#"><img src="images/cart.svg" alt=""></a>
-      <a href="#"><img src="images/user.svg" alt=""></a>
-      <a href="#"><img src="images/bell.svg" alt=""></a>
-    </div>
-  </div>
-  <ul class="links-container"> 
-    <li class ="link-item"><button onclick="document.location='shop.html'"><a href="#" class ="link"> Shop </a> </button> </li>
-    <li class ="link-item"><button onclick="document.location='work.html'"><a href="#" class ="link"> Promo </a> </li>
-    <li class ="link-item"><button onclick="document.location='work.html'"><a href="#" class ="link"> About </a> </li>
-    <li class ="link-item"><button onclick="document.location='work.html'"><a href="#" class ="link"> Blog </a> </li>
-  </ul>
-
-	`;	
-}
-
-createNav();
 'use strict';
 
 /**
@@ -78,4 +51,13 @@ window.onclick = function(event) {
       }
     }
   };
+}
+//for resposive navbar
+function myFunction() {
+  var x = document.getElementById("mynav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
 }
